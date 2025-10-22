@@ -7,7 +7,7 @@ mydb = mysql.connector.connect(
     password = "1607"
 )
 cursor = mydb.cursor()
-cursor.execute("CREATE DATABASE IF NOT EXIST alx_book_store")
+cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 print("Database 'alx_book_store' created successfully!")
 
 if mydb.is_connected:
